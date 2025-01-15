@@ -40,8 +40,9 @@ body {
 .error-title {
     font-size: 64px;
     font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+    /*text-transform: uppercase;*/
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .error-description {
@@ -54,14 +55,15 @@ body {
     font-size: 20px;
     color: #ffffff;
     text-decoration: none;
-    background-color: #1f665e;
+    background-color: #00c5cc;
     padding: 12px 25px;
     border-radius: 30px;
     transition: all 0.3s ease;
 }
 
 .back-link:hover {
-    background-color: #134E4A;
+    background-color: #ffffff;
+    color: #00c5cc;
     transform: scale(1.1);
 }
 
