@@ -8,12 +8,7 @@
 
 html, body {
     width: 100%;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
     background-color: #f9f9f9;
 }
 
@@ -24,112 +19,146 @@ body {
     color: white;
 }
 
-.top-info-bar span {
-   font-weight: normal;
-}
-
 .top-info-bar span.text-underline {
-   text-decoration: underline;
+    text-decoration: underline;
 }
 
 .header {
-   background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .header .logo {
-   height: 50px;
+    height: 50px;
 }
 
 .header nav ul {
-   margin: 0;
-   padding: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .header nav ul li {
-   margin: 0 15px;
+    margin: 0 15px;
 }
 
 .header nav ul a {
-   color: white;
-   text-decoration: none;
-   font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .header nav ul a:hover {
-   text-decoration: underline;
+    text-decoration: underline;
 }
 
 .banner {
-   padding: 300px 15px;
-   background-image: url('img/SEM.png');
-   background-size: cover; 
-   background-position: center;
-   position: relative;
+    padding: 300px 15px;
+    background-image: url('img/centro-doc.webp');
+    background-size: cover; 
+    background-position: center;
+    position: relative;
 }
 
 .banner .banner-text h1 {
-   font-size: 2.5em;
-   position: absolute;
-   bottom: 80px; 
-   left: 80px;   
-   color: #fff;  
-   padding: 10px 15px;
-   border-radius: 5px;
+    font-size: 2.5em;
+    position: absolute;
+    bottom: 80px; 
+    left: 80px;   
+    color: #fff;  
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
-.container {
-   max-width: 1200px;
-   margin: 0 auto;
-   padding: 0px;
+.exposicoes {
+    text-align: center;
+    padding: 60px;
+    background-color: #fff;
 }
 
-h1, h2 {
-   color: #2A8278;
+.exposicoes h2 {
+    color: #1d7f73;
+    margin-bottom: 40px;
 }
 
-.section {
-   margin-bottom: 40px;
-   background: #fff;
-   padding: 20px;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-   border-radius: 8px;
+.slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.image-placeholder {
-   width: 100%;
-   height: 300px;
-   background-color: #ddd;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border: 2px dashed #ccc;
-   margin: 20px 0;
-   background-image: url('img/SEM.png');
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
-.image-placeholder::after {
-   content: '\2193';
-   font-size: 24px;
-   color: #888;
+.slide {
+    min-width: 100%;
+    display: none;
 }
 
-ul {
-   list-style-type: none;
-   padding: 0;
+.slide.active {
+    display: block; 
 }
 
-ul li {
-   margin-bottom: 10px;
+.navigation-dots {
+    margin: 10px auto;
 }
 
-.edicoes-grid {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 20px;
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-.edicoes-grid .image-placeholder {
-   height: 300px;
+.dot.active {
+    background-color: #1d7f73;
+}
+
+.separador {
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin-bottom: 40px;
+}
+
+[class^="section-"] {
+    padding: 20px;
+    margin: 40px;
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+[class^="section-"] h1 {
+    font-size: 20px;
+    color: #007B7F;
+    margin-bottom: 20px;
+}
+
+[class^="section-"] .content {
+    display: flex;
+    gap: 40px; 
+}
+
+[class^="section-"] .content.reverse {
+   flex-direction: row-reverse; 
+}
+
+[class^="section-"] .content img {
+   flex: 1;  
+   max-width: 25%;
+   object-fit: cover; 
+   border-radius: 8px; 
+}
+
+[class^="section-"] .content p {
+   font-size: 14px; 
+   flex: 1;
+   margin: auto;
 }
 
 footer {
@@ -269,10 +298,4 @@ footer {
     .parceiros-logos {
         flex-direction: column;
     }
-}
-
-@media (max-width: 768px) {
-   .edicoes-grid {
-       grid-template-columns: 1fr;
-   }
 }
