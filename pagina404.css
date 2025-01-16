@@ -19,7 +19,13 @@ body {
 }
 
 a {
-    text-decoration: none; /* NÃO CONSIGO METER COR NO HOOVER NOS LINKS */
+    color: white;
+    text-decoration: none; /* Removes the underline */
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none; /* Ensures underline doesn't reappear on hover */
 }
 
 .top-info-bar {
@@ -27,6 +33,11 @@ a {
     padding: 8px 15px;
     background-color: #00c5cc;
     color: white;
+}
+
+.top-info-bar a i:hover {
+    color: #000;
+    text-decoration: none;
 }
 
 .top-info-bar span {
