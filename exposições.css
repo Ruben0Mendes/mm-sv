@@ -69,10 +69,18 @@ a:hover {
 
 .banner {
     padding: 300px 15px;
-    background-image: url('img/Educativo.jpg');
+    /*background-image: url('img/Educativo.jpg');*/
     background-size: cover; 
     background-position: center;
     position: relative;
+}
+
+body.pagina-expo .banner {
+    background-image: url('img/Educativo.jpg');
+}
+
+body.pagina-edu .banner {
+    background-image: url('img/Educativo_1.jpg');
 }
 
 .banner .banner-text h1 {
