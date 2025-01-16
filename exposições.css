@@ -80,7 +80,7 @@ a {
 }
 
 .exposicoes h2 {
-    color: #1d7f73;
+    color: #00c5cc;
     margin-bottom: 40px;
 }
 
@@ -120,7 +120,7 @@ a {
 }
 
 .dot.active {
-    background-color: #1d7f73;
+    background-color: #00c5cc;
 }
 
 .separador {
@@ -138,8 +138,8 @@ a {
 }
 
 [class^="section-"] h1 {
-    font-size: 20px;
-    color: #007B7F;
+    font-size: 24px;
+    color: #00c5cc;
     margin-bottom: 20px;
 }
 
@@ -207,7 +207,7 @@ footer {
 }
 
 .info h3 {
-    color: #00d9e0;
+    color: #00c5cc;
     margin-bottom: 15px;
     font-size: 1.2rem;
 }
@@ -262,7 +262,7 @@ footer {
 }
 
 .parceiros h3 {
-    color: #00d9e0;
+    color: #00c5cc;
     margin-bottom: 15px;
     font-size: 1.2rem;
 }
