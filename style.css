@@ -19,12 +19,14 @@ body {
 
 a {
     color: white;
-    text-decoration: none; /* Removes the underline */
+    text-decoration: none; 
+    transition: 0,25ms;
 }
 
 a:hover {
     color: #000;
-    text-decoration: none; /* Ensures underline doesn't reappear on hover */
+    text-decoration: none; 
+    scale:1.25%;
 }
 
 .top-info-bar {
@@ -65,9 +67,17 @@ a:hover {
 }
 
 .header nav ul a {
-   color: white;
+   color: black;
    text-decoration: none;
    font-weight: bold;
+   transition: 0,25ms;
+}
+
+
+.header nav ul a:hover {
+    color: #000;
+    text-decoration: none; 
+    scale:1.25%;
 }
 
 .banner {
