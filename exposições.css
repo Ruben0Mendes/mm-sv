@@ -303,3 +303,25 @@ footer {
         flex-direction: column;
     }
 }
+
+
+
+.final{
+    display: block;
+    
+    font-weight: bold;
+    font-size:medium;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 40px;
+    background-color: #00c5cc;
+    border-radius: 10px;
+    transition: 0.25ms;
+
+}
+
+.finaL:hover{
+    background-color: #00c5cc;
+    color: black ;
+}
