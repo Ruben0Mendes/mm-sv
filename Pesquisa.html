@@ -83,6 +83,7 @@
     
     <div id="search-results"></div>
     
+    <!---->
     <script>
         // Prevent form submission and send the search request using AJAX
         document.getElementById('searchForm').addEventListener('submit', function(e) {
@@ -109,17 +110,19 @@
                             var resultElement = document.createElement('div');
                             resultElement.classList.add('result');
     
-                            // Create the result link
+                            // Create an h2 element for the title as a clickable link
+                            var h2 = document.createElement('h2');
                             var link = document.createElement('a');
                             link.href = result.url;
                             link.textContent = result.title;
+                            h2.appendChild(link);  // Wrap the link inside the h2
     
                             // Create the snippet text
                             var snippet = document.createElement('p');
                             snippet.innerHTML = result.snippet;
     
-                            // Append to the result container
-                            resultElement.appendChild(link);
+                            // Append the h2 (with link) and snippet to the result element
+                            resultElement.appendChild(h2);
                             resultElement.appendChild(snippet);
                             resultsContainer.appendChild(resultElement);
                         });
@@ -130,6 +133,9 @@
                 .catch(error => console.log('Erro ao buscar resultados:', error));
         });
     </script>
+    
+    
+    
     
     
 

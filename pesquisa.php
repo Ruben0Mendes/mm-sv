@@ -31,8 +31,19 @@ if (isset($_GET['gsearch'])) {
             $content
         );
 
+        // Remove the top-info-bar, header, and footer sections
+        $content_without_topbar_header_footer = preg_replace(
+            [
+                '/<div class="top-info-bar".*?<\/div>/s', // Remove the top-info-bar
+                '/<header.*?<\/header>/s',               // Remove the header
+                '/<footer.*?<\/footer>/s'                // Remove the footer
+            ],
+            '',
+            $content_without_styles_and_scripts
+        );
+
         // Strip remaining HTML tags to only get text content
-        $text_content = strip_tags($content_without_styles_and_scripts);
+        $text_content = strip_tags($content_without_topbar_header_footer);
 
         // Search for the term in the text content (case-insensitive)
         if (stripos($text_content, $search_term) !== false) {
