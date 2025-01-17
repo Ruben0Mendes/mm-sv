@@ -541,6 +541,34 @@ button:hover {
     color: #000;
 }
 
+/* Styling for the search results section */
+.section-01 {
+    padding: 20px;
+    margin: 40px;
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-01 h2 {
+    font-size: 24px;
+    color: #28A79E;
+    margin-bottom: 20px;
+}
+
+.section-01 .content {
+    display: block;
+    gap: 20px; /* Space between the text elements */
+}
+
+.section-01 .content p {
+    font-size: 14px;
+    margin: auto;
+    color: #333;
+}
+
+
 input[type="search"] {
     display: flex;
     align-items:center;

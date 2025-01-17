@@ -106,25 +106,33 @@
     
                     if (data.results.length > 0) {
                         data.results.forEach(result => {
-                            // Create a result element
-                            var resultElement = document.createElement('div');
-                            resultElement.classList.add('result');
+                            // Create a result section element
+                            var section = document.createElement('section');
+                            section.classList.add('section-01'); // Add the section-01 class for styling
     
-                            // Create an h2 element for the title as a clickable link
+                            // Create the title (h2) as a clickable link
                             var h2 = document.createElement('h2');
                             var link = document.createElement('a');
                             link.href = result.url;
                             link.textContent = result.title;
-                            h2.appendChild(link);  // Wrap the link inside the h2
+                            h2.appendChild(link); // Wrap the link inside h2
     
-                            // Create the snippet text
-                            var snippet = document.createElement('p');
-                            snippet.innerHTML = result.snippet;
+                            // Create the content (p) for the description
+                            var content = document.createElement('div');
+                            content.classList.add('content'); // Add content class for layout
     
-                            // Append the h2 (with link) and snippet to the result element
-                            resultElement.appendChild(h2);
-                            resultElement.appendChild(snippet);
-                            resultsContainer.appendChild(resultElement);
+                            // Insert the highlighted snippet into the paragraph using innerHTML
+                            var p = document.createElement('p');
+                            p.innerHTML = result.snippet;  // This allows the <strong> tag to be properly rendered
+    
+                            content.appendChild(p);
+    
+                            // Append title and content to the section
+                            section.appendChild(h2);
+                            section.appendChild(content);
+    
+                            // Append the section to the results container
+                            resultsContainer.appendChild(section);
                         });
                     } else {
                         resultsContainer.textContent = 'Nenhum resultado encontrado';
@@ -133,10 +141,6 @@
                 .catch(error => console.log('Erro ao buscar resultados:', error));
         });
     </script>
-    
-    
-    
-    
     
 
 
