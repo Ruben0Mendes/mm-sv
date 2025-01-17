@@ -48,10 +48,14 @@ if (isset($_GET['gsearch'])) {
             // Highlight the search term in the snippet
             $highlighted_snippet = str_ireplace($search_term, "<strong>$search_term</strong>", $snippet);
 
-            // Add the file name, relative URL, and snippet to the results array
+            // Get the title of the page by extracting it from the <title> tag
+            preg_match('/<title>(.*?)<\/title>/', $content, $matches);
+            $page_title = isset($matches[1]) ? $matches[1] : basename($file);  // If no title is found, use the filename
+
+            // Add the page title, relative URL, and snippet to the results array
             $results[] = [
-                'title' => basename($file),
-                'url' => basename($file),
+                'title' => $page_title,
+                'url' => basename($file),  // Relative URL (since the file is in the same project root)
                 'snippet' => $highlighted_snippet
             ];
         }

@@ -526,6 +526,8 @@ button:hover {
 
 #search-results {
     margin-top: 20px;
+    margin-left: 5%; 
+    width: 95%; 
 }
 
 #search-results a {
