@@ -99,6 +99,14 @@ li:hover{
     border-radius:5%;
 }
 
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown.show .dropdown-menu {
+    display: block;
+}
+
 .banner {
     padding: 300px 15px;
     background-image: url('img/background.jpg');
