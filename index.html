@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="idioma.js"></script>
     <style>
         /* Change color of the icon only */
         a i {
@@ -83,7 +82,18 @@
                     </ul>
                 </li>
             </div>
-            
+            <script>
+                function changeLanguage(language) {
+                    localStorage.setItem('language', language);  // Store language choice
+                
+                    if (language === 'eng') {
+                        window.location.href = "index_eng.html"; // Redirect to English version
+                    } else {
+                        window.location.href = "index.html"; // Redirect to Portuguese version
+                    }
+                }
+            </script>
+
         </div>
     </header>
 
