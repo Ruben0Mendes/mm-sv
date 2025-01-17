@@ -83,6 +83,10 @@ body.pagina-edu .banner {
     background-image: url('img/Educativo_1.jpg');
 }
 
+body.pagina-artigos .banner {
+    background-image: url('img/artigos.jpg');
+}
+
 .banner .banner-text h1 {
     font-size: 2.5em;
     position: absolute;
@@ -91,6 +95,21 @@ body.pagina-edu .banner {
     color: #fff;  
     padding: 10px 15px;
     border-radius: 5px;
+}
+
+
+.btn-blue {
+    background-color: #00c5cc;
+    color: white; 
+    border-radius: 5px;
+    padding: 10px 20px;
+ }
+
+
+.btn-align-bottom {
+    margin-top: auto; /* Push the button to the bottom */
+    align-self: center; /* Center the button horizontally */
+    display: inline-block; /* Keep the button as a block-like element */
 }
 
 .exposicoes {
@@ -183,6 +202,37 @@ body.pagina-edu .banner {
    font-size: 14px; 
    flex: 1;
    margin: auto;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center; /* Centers the pagination links */
+    margin-top: 30px; /* Space from content above */
+}
+  
+.page-link {
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #00c5cc; /* Button color */
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+.page-link:hover {
+    background-color: whitesmoke; /* Darker color on hover */
+    color: #00c5cc;
+}
+  
+.page-link.active {
+    background-color: white; /* Highlight active page */
+    color: #00c5cc;
+}
+
+.page-link.active:hover {
+    background-color: whitesmoke; /* Same as normal hover effect */
+    color: #00c5cc;
 }
 
 footer {
