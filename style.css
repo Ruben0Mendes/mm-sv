@@ -128,8 +128,7 @@ li:hover{
 
 .banner .btn-blue:hover{
     color:#00c5cc;
-    background-color: #333;
-    text-shadow: #00d9e0;
+    background-color: white;
 }
 
 .novidades {
@@ -163,8 +162,8 @@ li:hover{
 }
 
 .card {
-    background: linear-gradient(to bottom, #00d9e0, #0077be);
-    border-radius: 8px;
+    background: linear-gradient(to bottom, #28A79E, #0E6EA0);
+    border-radius: 14px;
     overflow: hidden;
     width: 250px;
     height: 250px;
@@ -172,9 +171,13 @@ li:hover{
     padding: 10px;
 }
 
+.card:hover {
+    background: white;
+}
+
 .card:hover .card-title,
 .card:hover .card-arrow {
-    color: black;
+    color: #00c5cc;
 }
 
 
@@ -213,7 +216,7 @@ li:hover{
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 1rem;
-    background-image: linear-gradient(to bottom, #00c5cc, #0077be);
+    background-image: linear-gradient(to bottom, #28A79E, #0E6EA0);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -222,7 +225,8 @@ li:hover{
 }
 
 .btn-todas-novidades:hover {
-    background-image: linear-gradient(to bottom, #00c5cc, #006ca8);
+    background: white;
+    color: #00c5cc;
 }
 
 .museu-section {
