@@ -138,13 +138,14 @@ a:hover {
     background: linear-gradient(to bottom, #00d9e0, #0077be);
     border-radius: 8px;
     overflow: hidden;
-    width: 200px;
+    width: 250px;
+    height: 250px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 5px;
+    padding: 10px;
 }
 
 .card img {
-    width: 80%;
+    height: 90%;
     display: block;
     margin: 0 auto;
 }
