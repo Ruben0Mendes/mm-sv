@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--<script src="idioma.js"></script>-->
+    <script src="form.js"></script> 
     <style>
         /* Change color of the icon only */
         a i {
@@ -15,7 +17,7 @@
       </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Home Page - Museu Municipal de Sever do Vouga</title>
+    <title>Contact Us</title>
 </head>
 
 <body>
@@ -29,31 +31,10 @@
             </div>
         </div>
     </div>
-
-<!--
-    <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">
-            <img src="img/logo.png" alt="Logo" class="logo"> </a>
-            <li><a href="index.html#o-nosso-museu" class="text-light">O NOSSO MUSEU</a></li>
-            <li><a href="exposicoes.html" class="text-light mx-3">VISITAR</a></li>
-            <li><a href="documentacao.html" class="text-light mx-3">DOCUMENTAÇÃO</a></li>
-            <li><a href="Educativo.html" class="text-light mx-3">EDUCATIVO</a></li>
-            <li><a href="Contactos.html" class="text-light">CONTACTOS</a></li>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-
-        <div class="right d-flex align-items-center">
-            <i class="bi bi-search text-light me-4 icon-size"></i>
-            <i class="bi bi-globe text-light icon-size"></i>
-        </div>
-      </div> 
-    -->
-
-
-
     
     <header class="bg-dark text-light opacity-75">
         <div class="container d-flex justify-content-between align-items-center py-2">
-            <a href="index.html" class="me-auto">
+            <a href="index_eng.html" class="me-auto">
                 <img src="img/logo.png" alt="Logo" class="logo">
             </a>
 
@@ -83,139 +64,44 @@
                 </li>
             </div>
             <script>
-                function changeLanguage(language) {
-                    localStorage.setItem('language', language);  // Store language choice
-                
-                    if (language === 'eng') {
-                        window.location.href = "Contactos_eng.html"; // Redirect to English version
-                    } else {
-                        window.location.href = "Contactos.html"; // Redirect to Portuguese version
-                    }
+            function changeLanguage(language) {
+                localStorage.setItem('language', language);  // Store language choice
+            
+                if (language === 'eng') {
+                    window.location.href = "Contactos_eng.html"; // Redirect to English version
+                } else {
+                    window.location.href = "Contactos.html"; // Redirect to Portuguese version
                 }
-                </script>
+            }
+            </script>
 
         </div>
     </header>
 
-    <section class="banner text-center text-white bg-image">
-        <div class="banner-text">
-            <h1>Museu Municipal<span><br></span>de Sever do Vouga</h1>
-            </div>
-        <a href="#o-nosso-museu" class="btn btn-blue">About Us</a>
-    </section>
+    <br>
 
-    <section class="novidades" id="novidades">
-        <h2 class="titulo">News</h2>
-        <div class="novidades-grid">
-            <a href="artigo.html"><div class="card">
-                <img src="img/Comportamento Exemplar.jpg" alt="Medalha" />
-                <div class="card-content">
-                    <p class="card-title">Comportamento Exemplar</p>
-                    <span class="card-arrow">➤</span>
-                </div>
-            </div></a>
-            <a href="artigo.html"><div class="card">
-                <img src="img/Evento Educativo.jpg" alt="Medalha" />
-                <div class="card-content">
-                    <p class="card-title">Educational Resources</p>
-                    <span class="card-arrow">➤</span>
-                </div>
-            </div></a>
-            <a href="artigo.html"><div class="card">
-                <img src="img/minas.jpg" alt="Medalha" />
-                <div class="card-content">
-                    <p class="card-title">Minas do Braçal</p>
-                    <span class="card-arrow">➤</span>
-                </div>
-            </div></a>
-            <a href="artigo.html"><div class="card">
-                <img src="img/Massas.jpg" alt="Medalha" />
-                <div class="card-content">
-                    <p class="card-title">Massas Vouga</p>
-                    <span class="card-arrow">➤</span>
-                </div>
-            </div></a>
-            <a href="artigo.html"><div class="card">
-                <img src="img/Atelier.jpg" alt="Medalha" />
-                <div class="card-content">
-                    <p class="card-title">Grandparents' Atelier</p>
-                    <span class="card-arrow">➤</span>
-                </div>
-            </div></a>
-            <a href="artigo.html"><div class="card">
-                <img src="img/peça do mes.jpg" alt="Medalha" />
-                <div class="card-content">
-                    <p class="card-title">Piece of the Month</p>
-                    <span class="card-arrow">➤</span>
-                </div>
-            </div></a>
-            <a href="artigo.html"><div class="card">
-                <img src="img/Feliz natal vouga.jpg" alt="Medalha" />
-                <div class="card-content">
-                    <p class="card-title">Christmas at Vouga</p>
-                    <span class="card-arrow">➤</span>
-                </div>
-            </div></a>
-            <a href="artigo.html"><div class="card">
-                <img src="img/joaquim Martins.jpg" alt="Medalha" />
-                <div class="card-content">
-                    <p class="card-title">Joaquim Martins</p>
-                    <span class="card-arrow">➤</span>
-                </div>
-            </div></a>
-        </div>
-        <a href="novidades.html" class="btn-todas-novidades">All News</a>
+    <section id="contato">
+        <form id="contactForm">
+            <label for="nome">Name:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="Data">Date:</label>
+            <input type="datetime-local" id="Data" name="Data">
+
+            <label for="mensagem">Leave your message:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Submit Your Message!</button>
+        </form>
+        <p id="formMessage"></p>
     </section>
 
 
 
-    <section class="museu-section" id="o-nosso-museu">
-        <h2 class="titulo">Our Museum</h2>
-        <div class="museu-conteudo">
-          <div class="imagem-container">
-            <img src="img/metalurgia.jpg" alt="A Metalurgia - O início de uma nova era">
-          </div>
-          <div class="texto-container">
-            <p>
-              Sever do Vouga's Municipal Museum is a dynamic cultural center, compromised to tell the History of a territory, disclosing its heritage and elements of culturaly and ethnographic interest, but also a place of investigation, which protects and makes known the heritage of Sever do Vouga.
-            </p>
-            <p>
-                It addresses archaeology in Terras de Sever, the industrial and mining heritage, ethnography and cultural practices, the natural wonders of the territory and its dedication to small fruits (with emphasis on the blueberry); supported by a unique museum collection, and with the use of new technologies. 
-            </p>
-          </div>
-          <div class="imagem-container">
-            <img src="img/mirtilo.jpg" alt="Mirtilo">
-          </div>
-        </div>
-      </section>
-
-      <section class="carrossel-container">
-        <div class="carrossel">
-          <img src="img/imagem1.png" alt="Vitrine de peças arqueológicas">
-          <img src="img/imagem2.png" alt="Peças arqueológicas exibidas no museu">
-          <img src="img/imagem3.png" alt="Paisagem rural com animais">
-          <img src="img/imagem1.png" alt="Vitrine de peças arqueológicas (duplicado)">
-          <img src="img/imagem2.png" alt="Peças arqueológicas exibidas no museu (dupliado)">
-          <img src="img/imagem3.png" alt="Paisagem rural com animais (duplicado)">
-        </div>
-        <div class="texto">
-          <p>
-            The Municipal Museum incorporates in its collections not only archaeological finds, but also pieces related to the economic activities that marked our municipality in the 19th and 20th centuries.
-          </p>
-          <p>
-            Among the archaeological sites represented in our collections, we highlight: Rôdo, Anta de Cerqueira, Dolmen 2 do Chão Redondo, Mamoa da Terrainha, Anta da Capela dos Mouros, Vale da Minhata, Castelão (Cedrim), Minas da Malhada, and Necrópole de Cima.
-          </p>
-          <p>
-            With regard to economic activities, there are representative pieces of local industries, animal husbandry systems, and forestry exploitation, the pasta industry and wine exploitation.
-          </p>
-          <p>
-            The Museum has received some donations that are enriching its collection. If you would like to donate any for documentary use, please contact us.
-          </p>
-        </div>
-      </section>
-      <script src="script.js"></script>
-
-<footer id="footer">
+    <footer id="footer">
         <div class="footer-container">
             <div class="map">
                 <iframe 
