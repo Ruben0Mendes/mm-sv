@@ -36,14 +36,14 @@ li{
 li:hover{
     color: #000;
     text-decoration: none;
-    background-color:#00c5cc ;
+    background-color:#28A79E ;
     border-radius:5%; 
 }
 
 .top-info-bar {
     height: 40px; 
     padding: 8px 15px;
-    background-color: #00c5cc;
+    background-color: #28A79E;
     color: white;
 }
 
@@ -82,7 +82,7 @@ li:hover{
     font-size: 20px;
     color: #ffffff;
     text-decoration: none;
-    background-color: #00c5cc;
+    background-color: #28A79E;
     padding: 12px 25px;
     border-radius: 30px;
     transition: all 0.3s ease;
@@ -90,7 +90,7 @@ li:hover{
 
 .back-link:hover {
     background-color: #ffffff;
-    color: #00c5cc;
+    color: #28A79E;
     transform: scale(1.1);
 }
 

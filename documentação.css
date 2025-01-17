@@ -25,7 +25,7 @@ a:hover {
 .top-info-bar {
     height: 40px; 
     padding: 8px 15px;
-    background-color: #00c5cc;
+    background-color: #28A79E;
     color: white;
 }
 
@@ -74,7 +74,7 @@ li{
 li:hover{
     color: #000;
     text-decoration: none;
-    background-color:#00c5cc ;
+    background-color:#28A79E ;
     border-radius:5%; 
 }
 

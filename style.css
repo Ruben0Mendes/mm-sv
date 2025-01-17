@@ -44,7 +44,7 @@ a:hover {
 .top-info-bar {
     height: 40px; 
     padding: 8px 15px;
-    background-color: #00c5cc;
+    background-color: #28A79E;
     color: white;
 }
 
@@ -96,7 +96,7 @@ li{
 li:hover{
     color: #000;
     text-decoration: none;
-    background-color:#00c5cc ;
+    background-color:#28A79E ;
     border-radius:5%;
 }
 
@@ -119,7 +119,7 @@ li:hover{
 }
 
 .banner .btn-blue {
-   background-color: #00c5cc;
+   background-color: #28A79E;
    color: white; 
    border-radius: 5px;
    padding: 10px 20px;
@@ -127,7 +127,7 @@ li:hover{
 }
 
 .banner .btn-blue:hover{
-    color:#00c5cc;
+    color:#28A79E;
     background-color: white;
 }
 
@@ -177,7 +177,7 @@ li:hover{
 
 .card:hover .card-title,
 .card:hover .card-arrow {
-    color: #00c5cc;
+    color: #28A79E;
 }
 
 
@@ -226,7 +226,7 @@ li:hover{
 
 .btn-todas-novidades:hover {
     background: white;
-    color: #00c5cc;
+    color: #28A79E;
 }
 
 .museu-section {
@@ -239,7 +239,7 @@ li:hover{
   
 .titulo {
     font-size: 3rem;
-    color: #00c5cc;
+    color: #28A79E;
     margin-bottom: 40px;
 }
   
@@ -353,7 +353,7 @@ footer {
 }
 
 .info h3 {
-    color: #00c5cc;
+    color: #28A79E;
     margin-bottom: 15px;
     font-size: 1.2rem;
 }
@@ -408,7 +408,7 @@ footer {
 }
 
 .parceiros h3 {
-    color: #00c5cc;
+    color: #28A79E;
     margin-bottom: 15px;
     font-size: 1.2rem;
 }
@@ -480,7 +480,7 @@ input, textarea {
     margin-bottom: 15px;
     padding: 12px;
     font-size: 16px;
-    border: 1px solid #00c5cc ; 
+    border: 1px solid #28A79E ;
     border-radius: 4px;
     transition: border 0.3s ease;
     box-sizing: border-box;
@@ -488,7 +488,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    border-color: #00c5cc; 
+    border-color: #28A79E;
 }
 
 button {
@@ -503,7 +503,7 @@ button {
 }
 
 button:hover {
-    background-color: #00c5cc; 
+    background-color: #28A79E;
     transform: scale(1.05);
 }
 
@@ -530,7 +530,7 @@ input[type="search"] {
     display: flex;
     align-items:center;
     align-content: center;
-    border: 2px solid #00c5cc;
+    border: 2px solid #28A79E;
     padding: .2em .4em;
     border-radius: .2em;
   }

@@ -25,7 +25,7 @@ a:hover {
 .top-info-bar {
     height: 40px; 
     padding: 8px 15px;
-    background-color: #00c5cc;
+    background-color: #28A79E;
     color: white;
 }
 
@@ -75,7 +75,7 @@ li{
 li:hover{
     color: #000;
     text-decoration: none;
-    background-color:#00c5cc ;
+    background-color:#28A79E ;
     border-radius:5%; 
 }
 
@@ -111,7 +111,7 @@ body.pagina-artigos .banner {
 
 
 .btn-blue {
-    background-color: #00c5cc;
+    background-color: #28A79E;
     color: white; 
     border-radius: 5px;
     padding: 10px 20px;
@@ -131,7 +131,7 @@ body.pagina-artigos .banner {
 }
 
 .exposicoes h2 {
-    color: #00c5cc;
+    color: #28A79E;
     margin-bottom: 40px;
 }
 
@@ -171,7 +171,7 @@ body.pagina-artigos .banner {
 }
 
 .dot.active {
-    background-color: #00c5cc;
+    background-color: #28A79E;
 }
 
 .separador {
@@ -190,7 +190,7 @@ body.pagina-artigos .banner {
 
 [class^="section-"] h1 {
     font-size: 24px;
-    color: #00c5cc;
+    color: #28A79E;
     margin-bottom: 20px;
 }
 
@@ -226,7 +226,7 @@ body.pagina-artigos .banner {
     text-decoration: none;
     padding: 10px 15px;
     margin: 0 5px;
-    background-color: #00c5cc; /* Button color */
+    background-color: #28A79E; /* Button color */
     color: white;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -234,17 +234,17 @@ body.pagina-artigos .banner {
   
 .page-link:hover {
     background-color: whitesmoke; /* Darker color on hover */
-    color: #00c5cc;
+    color: #28A79E;
 }
   
 .page-link.active {
     background-color: white; /* Highlight active page */
-    color: #00c5cc;
+    color: #28A79E;
 }
 
 .page-link.active:hover {
     background-color: whitesmoke; /* Same as normal hover effect */
-    color: #00c5cc;
+    color: #28A79E;
 }
 
 footer {
@@ -289,7 +289,7 @@ footer {
 }
 
 .info h3 {
-    color: #00c5cc;
+    color: #28A79E;
     margin-bottom: 15px;
     font-size: 1.2rem;
 }
@@ -344,7 +344,7 @@ footer {
 }
 
 .parceiros h3 {
-    color: #00c5cc;
+    color: #28A79E;
     margin-bottom: 15px;
     font-size: 1.2rem;
 }
@@ -397,13 +397,13 @@ footer {
     padding-bottom: 20px;
     padding-top: 20px;
     margin: 40px;
-    background-color: #00c5cc;
+    background-color: #28A79E;
     border-radius: 10px;
     transition: 0.25ms;
 
 }
 
 .finaL:hover{
-    background-color: #00c5cc;
+    background-color: #28A79E;
     color: black ;
 }
