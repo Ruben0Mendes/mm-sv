@@ -123,7 +123,7 @@
     
                             // Insert the highlighted snippet into the paragraph using innerHTML
                             var p = document.createElement('p');
-                            p.innerHTML = result.snippet;  // This allows the <strong> tag to be properly rendered
+                            p.innerHTML = truncateHTML(result.snippet, 150);  // This will ensure truncation and ellipsis
     
                             content.appendChild(p);
     
@@ -140,8 +140,56 @@
                 })
                 .catch(error => console.log('Erro ao buscar resultados:', error));
         });
-    </script>
     
+        // Function to truncate HTML content while preserving tags and adding ellipsis
+        function truncateHTML(html, maxLength) {
+            var div = document.createElement('div');
+            div.innerHTML = html;
+            var textContent = div.textContent || div.innerText; // Get plain text
+    
+            if (textContent.length <= maxLength) {
+                return html; // Return the original content if it's shorter than the maxLength
+            }
+    
+            // Truncate the plain text to the specified length
+            var truncatedText = textContent.substring(0, maxLength) + '...';
+    
+            // Now we need to truncate the HTML content without breaking the tags
+            div.innerHTML = html;
+            var truncatedHTML = '';
+            var currentLength = 0;
+    
+            // Iterate through the child nodes and build a truncated HTML string
+            function recursiveTruncate(node) {
+                if (node.nodeType === Node.TEXT_NODE) {
+                    // If it's a text node, we can truncate it
+                    var text = node.nodeValue;
+                    if (currentLength + text.length > maxLength) {
+                        truncatedHTML += text.substring(0, maxLength - currentLength) + '...';
+                        currentLength = maxLength; // Ensure we stop at the truncation point
+                    } else {
+                        truncatedHTML += text;
+                        currentLength += text.length;
+                    }
+                } else if (node.nodeType === Node.ELEMENT_NODE) {
+                    // If it's an element node, we recursively process its child nodes
+                    var tagName = node.nodeName.toLowerCase();
+                    truncatedHTML += `<${tagName}>`;
+    
+                    // Process the child nodes recursively
+                    Array.from(node.childNodes).forEach(childNode => recursiveTruncate(childNode));
+    
+                    truncatedHTML += `</${tagName}>`;
+                }
+            }
+    
+            // Apply the recursive truncation
+            Array.from(div.childNodes).forEach(childNode => recursiveTruncate(childNode));
+    
+            return truncatedHTML;
+        }
+    </script>
+          
 
 
 <footer id="footer">
