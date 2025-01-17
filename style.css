@@ -17,15 +17,17 @@ body {
     background-color: #f9f9f9;
 }
 
+
+
 a {
     color: white;
     text-decoration: none; 
-    transition: 0,25ms;
+    transition: 0,35ms;
 }
 
 a:hover {
     color: #000;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .top-info-bar {
@@ -63,6 +65,7 @@ a:hover {
 
 .header nav ul li {
    margin: 0 15px;
+   transition: 0.35ms;
 }
 
 .header nav ul a {
@@ -73,10 +76,17 @@ a:hover {
 }
 
 
-.header nav ul a:hover {
+
+li{
+    transition: 0.35ms;
+    padding: 10px;
+}
+
+li:hover{
     color: #000;
-    text-decoration: none; 
-    scale:1.25%;
+    text-decoration: none;
+    background-color:#00c5cc ;
+    border-radius:5%;
 }
 
 .banner {

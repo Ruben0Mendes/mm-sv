@@ -28,6 +28,18 @@ a:hover {
     text-decoration: none; /* Ensures underline doesn't reappear on hover */
 }
 
+li{
+    transition: 0.35ms;
+    padding: 10px;
+}
+
+li:hover{
+    color: #000;
+    text-decoration: none;
+    background-color:#00c5cc ;
+    border-radius:5%; 
+}
+
 .top-info-bar {
     height: 40px; 
     padding: 8px 15px;
