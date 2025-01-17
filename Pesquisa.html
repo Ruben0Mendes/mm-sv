@@ -73,10 +73,51 @@
         </div>
     </header>
 
-<div class="Pesquisa">
-    <label for="gsearch">Procura no nosso site:</label>
-    <input type="search" id="gsearch" name="gsearch"> 
-</div>
+    <div class="Pesquisa">
+        <form id="searchForm" method="GET">
+            <label for="gsearch">Procura no nosso site:</label>
+            <input type="search" id="gsearch" name="gsearch"> 
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    
+    <div id="search-results"></div>
+    
+    <script>
+        // Prevent form submission and send the search request using AJAX
+        document.getElementById('searchForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent page reload on form submit
+            
+            var input = document.getElementById('gsearch').value;
+    
+            // Check if search term is provided
+            if (input.length < 3) {
+                document.getElementById('search-results').innerHTML = 'Por favor insira pelo menos 3 caracteres.';
+                return;
+            }
+    
+            // Make AJAX request to the PHP server
+            fetch('pesquisa.php?gsearch=' + encodeURIComponent(input))
+                .then(response => response.json())
+                .then(data => {
+                    var resultsContainer = document.getElementById('search-results');
+                    resultsContainer.innerHTML = ''; // Clear previous results
+    
+                    if (data.results.length > 0) {
+                        data.results.forEach(result => {
+                            var link = document.createElement('a');
+                            link.href = result.url;
+                            link.textContent = result.title;
+                            resultsContainer.appendChild(link);
+                            resultsContainer.appendChild(document.createElement('br'));
+                        });
+                    } else {
+                        resultsContainer.textContent = 'Nenhum resultado encontrado';
+                    }
+                })
+                .catch(error => console.log('Erro ao buscar resultados:', error));
+        });
+    </script> 
 
 
 <footer id="footer">

@@ -524,6 +524,20 @@ button:hover {
 
 }
 
+#search-results {
+    margin-top: 20px;
+}
+
+#search-results a {
+    display: block;
+    padding: 5px;
+    color: #28A79E;
+    text-decoration: none;
+}
+
+#search-results a:hover {
+    color: #000;
+}
 
 input[type="search"] {
     display: flex;
