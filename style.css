@@ -112,6 +112,13 @@ li:hover{
    color: white; 
    border-radius: 5px;
    padding: 10px 20px;
+   transition: 0.35ms;
+}
+
+.banner .btn-blue:hover{
+    color:#00c5cc;
+    background-color: #333;
+    text-shadow: #00d9e0;
 }
 
 .novidades {
