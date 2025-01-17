@@ -25,7 +25,7 @@ a:hover {
 .top-info-bar {
     height: 40px; 
     padding: 8px 15px;
-    background-color: #28A79E;
+    background: linear-gradient(to right, #28A79E, #0E6EA0, #28A79E);
     color: white;
 }
 
