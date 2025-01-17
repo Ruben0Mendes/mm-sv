@@ -70,6 +70,7 @@ a:hover {
 li{
     transition: 0.35ms;
     padding: 10px;
+    list-style: none;
 }
 
 li:hover{

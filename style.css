@@ -86,9 +86,8 @@ a:hover {
    transition: 0,25ms;
 }
 
-
-
 li{
+    list-style: none;
     transition: 0.35ms;
     padding: 10px;
 }
