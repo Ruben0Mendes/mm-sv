@@ -144,6 +144,12 @@ a:hover {
     padding: 10px;
 }
 
+.card:hover .card-title,
+.card:hover .card-arrow {
+    color: black;
+}
+
+
 .card img {
     height: 90%;
     display: block;
