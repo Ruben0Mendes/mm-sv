@@ -87,7 +87,7 @@
         // Prevent form submission and send the search request using AJAX
         document.getElementById('searchForm').addEventListener('submit', function(e) {
             e.preventDefault(); // Prevent page reload on form submit
-            
+    
             var input = document.getElementById('gsearch').value;
     
             // Check if search term is provided
@@ -105,11 +105,23 @@
     
                     if (data.results.length > 0) {
                         data.results.forEach(result => {
+                            // Create a result element
+                            var resultElement = document.createElement('div');
+                            resultElement.classList.add('result');
+    
+                            // Create the result link
                             var link = document.createElement('a');
                             link.href = result.url;
                             link.textContent = result.title;
-                            resultsContainer.appendChild(link);
-                            resultsContainer.appendChild(document.createElement('br'));
+    
+                            // Create the snippet text
+                            var snippet = document.createElement('p');
+                            snippet.innerHTML = result.snippet;
+    
+                            // Append to the result container
+                            resultElement.appendChild(link);
+                            resultElement.appendChild(snippet);
+                            resultsContainer.appendChild(resultElement);
                         });
                     } else {
                         resultsContainer.textContent = 'Nenhum resultado encontrado';
@@ -117,7 +129,9 @@
                 })
                 .catch(error => console.log('Erro ao buscar resultados:', error));
         });
-    </script> 
+    </script>
+    
+    
 
 
 <footer id="footer">
